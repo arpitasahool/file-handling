@@ -1,9 +1,12 @@
-'''f=open('test.txt','r')
+#Q.1- Write a Python program to read n lines of a file
+f=open('test.txt','r')
 new=f.read()
 print(new)
 f.close()
 print()
 
+
+#Q.2- Write a Python program to count the frequency of words in a file.
 f=open("test.txt",'r')
 data=f.read()
 words=data.split()
@@ -12,6 +15,7 @@ for i in words:
     dict[i]=words.count(i)
 print(dict)
 print()
+
 
 
 #Q3. Write a Python program to copy the contents of a file to another file 
@@ -34,7 +38,6 @@ with open('test.txt','r') as f1:
 with open('test2.txt','w') as f3:
       f3.write(s)
 
-'''
 #Q5. Write a Python program to write 10 random numbers into a file. Read the file and then sort the numbers and then store it to another file.
 a=int(input("enter range"))
 with open('test3.txt','w') as f:
